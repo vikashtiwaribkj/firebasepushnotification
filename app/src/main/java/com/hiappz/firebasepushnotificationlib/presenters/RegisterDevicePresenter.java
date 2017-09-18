@@ -23,7 +23,7 @@ public class RegisterDevicePresenter extends PresenterFactory{
     private final String TAG = "RegisterDevicePresenter";
     private RegisterDeviceResModel deviceResModel = null;
 
-    public Observable<Response<RegisterDeviceResModel>> registerDeviceToFirebase(final LifeCycleListener listener, final String firebaseToken) {
+    public Observable<Response<RegisterDeviceResModel>> registerDeviceToFirebase(final LifeCycleListener listener, final String android_id, final String firebaseToken) {
         LogHelper.d(TAG, "-->> registerDeviceToFirebase -->> executed");
 
         Observable<Response<RegisterDeviceResModel>> responseObservable = null;
@@ -32,9 +32,10 @@ public class RegisterDevicePresenter extends PresenterFactory{
 
         RegisterDeviceReqModel deviceReqModel = new RegisterDeviceReqModel();
         deviceReqModel.setSubId(firebaseToken);
+        deviceReqModel.setDeviceId(android_id);
+        deviceReqModel.setOldSubId("");
         deviceReqModel.setAppId("BnbOptsmQPtHa9+4e+9kY7N6QbqlnxkALL852a4VP+k=");
         deviceReqModel.setDeviceType("android");
-        deviceReqModel.setDeviceId("12345");
         deviceReqModel.setCity("Noida");
         deviceReqModel.setState("Uttar Pradesh");
         deviceReqModel.setCountry("India");
@@ -59,7 +60,7 @@ public class RegisterDevicePresenter extends PresenterFactory{
 
                     @Override
                     public void onError(Throwable e) {
-                        registerDeviceToFirebase(listener, firebaseToken);
+                        registerDeviceToFirebase(listener, android_id, firebaseToken);
                     }
 
                     @Override

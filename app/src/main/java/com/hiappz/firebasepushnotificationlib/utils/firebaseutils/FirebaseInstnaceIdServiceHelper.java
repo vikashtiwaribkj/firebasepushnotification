@@ -1,10 +1,12 @@
 package com.hiappz.firebasepushnotificationlib.utils.firebaseutils;
 
+import android.provider.Settings;
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 import com.hiappz.firebasepushnotificationlib.BuildConfig;
+import com.hiappz.firebasepushnotificationlib.helpers.LogHelper;
 import com.hiappz.firebasepushnotificationlib.utils.listeners.LifeCycleListener;
 import com.hiappz.firebasepushnotificationlib.utils.UtilityConstant;
 import com.hiappz.firebasepushnotificationlib.models.RegisterDeviceResModel;
@@ -31,6 +33,7 @@ public class FirebaseInstnaceIdServiceHelper extends FirebaseInstanceIdService {
         currentRefreshToken = FirebaseInstanceId.getInstance().getToken();
         currentRefreshTokenCreationTime = FirebaseInstanceId.getInstance().getCreationTime();
         currentRefreshTokenId = FirebaseInstanceId.getInstance().getId();
+
 
         if (BuildConfig.DEBUG) {
             Log.d(TAG, "onTokenRefresh -->> executed : currentRefreshToken :: " + currentRefreshToken);
@@ -59,7 +62,11 @@ public class FirebaseInstnaceIdServiceHelper extends FirebaseInstanceIdService {
             }
         };
 
+        String android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+        LogHelper.d(TAG, "onStart: -->> android_id -->> "+android_id);
+
         RegisterDevicePresenter presenter = (RegisterDevicePresenter) PresenterFactory.getInstance(UtilityConstant.REGISTER_DEVICE_PRSENTER);
-        Observable<Response<RegisterDeviceResModel>> responseObservable = presenter.registerDeviceToFirebase(lifeCycleListener, currentRefreshToken);
+        Observable<Response<RegisterDeviceResModel>> responseObservable = presenter.registerDeviceToFirebase(lifeCycleListener, android_id, currentRefreshToken);
     }
+
 }

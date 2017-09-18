@@ -8,7 +8,6 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class RegisterDeviceReqModel {
-
     @SerializedName("app_id")
     @Expose
     private String appId;
@@ -21,6 +20,9 @@ public class RegisterDeviceReqModel {
     @SerializedName("sub_id")
     @Expose
     private String subId;
+    @SerializedName("old_sub_id")
+    @Expose
+    private String oldSubId;
     @SerializedName("city")
     @Expose
     private String city;
@@ -63,6 +65,14 @@ public class RegisterDeviceReqModel {
         this.subId = subId;
     }
 
+    public String getOldSubId() {
+        return oldSubId;
+    }
+
+    public void setOldSubId(String oldSubId) {
+        this.oldSubId = oldSubId;
+    }
+
     public String getCity() {
         return city;
     }
@@ -86,4 +96,5 @@ public class RegisterDeviceReqModel {
     public void setCountry(String country) {
         this.country = country;
     }
+
 }

@@ -5,14 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+import com.hiappz.firebasepushnotificationlib.helpers.LogHelper;
 
 public class ActivityPushNotificationMain extends AppCompatActivity {
+    private final String TAG = "ActivityPushNotificationMain";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_push_notification_main);
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        /*String android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+        LogHelper.d(TAG, "onStart: -->> android_id -->> "+android_id);*/
     }
 
     /**
@@ -28,5 +38,12 @@ public class ActivityPushNotificationMain extends AppCompatActivity {
                 .setStorageBucket(storage_bucket); //    "storage_bucket"           :   project_info/storage bucket
 
         FirebaseApp.initializeApp(this, firebaseOptionsBuilder.build());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        LogHelper.d(TAG, "-->> onDestroy -->> executed");
+
     }
 }
