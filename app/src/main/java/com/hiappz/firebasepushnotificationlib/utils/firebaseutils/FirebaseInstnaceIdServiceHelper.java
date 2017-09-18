@@ -1,12 +1,12 @@
-package com.hiappz.firebasepushnotificationlib.firebaseutils;
+package com.hiappz.firebasepushnotificationlib.utils.firebaseutils;
 
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 import com.hiappz.firebasepushnotificationlib.BuildConfig;
-import com.hiappz.firebasepushnotificationlib.LifeCycleListener;
-import com.hiappz.firebasepushnotificationlib.UtilityConstant;
+import com.hiappz.firebasepushnotificationlib.utils.listeners.LifeCycleListener;
+import com.hiappz.firebasepushnotificationlib.utils.UtilityConstant;
 import com.hiappz.firebasepushnotificationlib.models.RegisterDeviceResModel;
 import com.hiappz.firebasepushnotificationlib.presenters.PresenterFactory;
 import com.hiappz.firebasepushnotificationlib.presenters.RegisterDevicePresenter;

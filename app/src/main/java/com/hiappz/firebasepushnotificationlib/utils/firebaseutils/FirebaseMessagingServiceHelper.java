@@ -1,4 +1,4 @@
-package com.hiappz.firebasepushnotificationlib.firebaseutils;
+package com.hiappz.firebasepushnotificationlib.utils.firebaseutils;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;

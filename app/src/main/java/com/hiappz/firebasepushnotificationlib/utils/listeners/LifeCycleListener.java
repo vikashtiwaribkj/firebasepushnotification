@@ -1,4 +1,4 @@
-package com.hiappz.firebasepushnotificationlib;
+package com.hiappz.firebasepushnotificationlib.utils.listeners;
 
 /**
  * Created by aj on 18/9/17.

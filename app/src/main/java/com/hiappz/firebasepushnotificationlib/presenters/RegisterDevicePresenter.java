@@ -1,6 +1,6 @@
 package com.hiappz.firebasepushnotificationlib.presenters;
 
-import com.hiappz.firebasepushnotificationlib.LifeCycleListener;
+import com.hiappz.firebasepushnotificationlib.utils.listeners.LifeCycleListener;
 import com.hiappz.firebasepushnotificationlib.apis.FirebaseApis;
 import com.hiappz.firebasepushnotificationlib.helpers.LogHelper;
 import com.hiappz.firebasepushnotificationlib.helpers.RetrofitHelper;

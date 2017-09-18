@@ -1,6 +1,6 @@
 package com.hiappz.firebasepushnotificationlib.presenters;
 
-import com.hiappz.firebasepushnotificationlib.UtilityConstant;
+import com.hiappz.firebasepushnotificationlib.utils.UtilityConstant;
 
 /**
  * Created by aj on 18/9/17.

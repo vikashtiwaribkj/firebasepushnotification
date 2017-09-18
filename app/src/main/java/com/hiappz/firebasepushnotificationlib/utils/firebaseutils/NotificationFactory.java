@@ -1,4 +1,4 @@
-package com.hiappz.firebasepushnotificationlib.firebaseutils;
+package com.hiappz.firebasepushnotificationlib.utils.firebaseutils;
 
 import android.content.Context;
 

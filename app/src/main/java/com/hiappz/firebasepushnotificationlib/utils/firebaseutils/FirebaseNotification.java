@@ -1,4 +1,4 @@
-package com.hiappz.firebasepushnotificationlib.firebaseutils;
+package com.hiappz.firebasepushnotificationlib.utils.firebaseutils;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -15,7 +15,7 @@ import android.support.v7.app.NotificationCompat;
 import com.google.firebase.messaging.RemoteMessage;
 import com.hiappz.firebasepushnotificationlib.ActivityPushNotificationMain;
 import com.hiappz.firebasepushnotificationlib.R;
-import com.hiappz.firebasepushnotificationlib.UtilityConstant;
+import com.hiappz.firebasepushnotificationlib.utils.UtilityConstant;
 import com.hiappz.firebasepushnotificationlib.helpers.ExceptionHelper;
 import com.hiappz.firebasepushnotificationlib.helpers.LogHelper;
 

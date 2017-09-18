@@ -20,7 +20,7 @@
         </activity>
 
         <service
-            android:name=".firebaseutils.FirebaseMessagingServiceHelper"
+            android:name=".utils.firebaseutils.FirebaseMessagingServiceHelper"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -30,7 +30,7 @@
         </service>
 
         <service
-            android:name=".firebaseutils.FirebaseInstnaceIdServiceHelper"
+            android:name=".utils.firebaseutils.FirebaseInstnaceIdServiceHelper"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
