@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/aj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
+        <dex dex="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_cbf034577291a21b798f4e3f41933fcb0bb4da9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aj/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_992e0b49e3ea89be525a7dc4052f8dc90687c93c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4ca3373c3f21f5abaad8bc88f58b76cfa601b05f">
+        <dex dex="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_457cfdb1737e62c0956708fde0d359d6c52133d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aj/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.1/19047bdb6a4fc00a44124f64ca98e88fc204e7e3/okhttp-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_b5c82694e0d3f0f280b2549d85fa336e50062ca3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/aj/07 Nov 2016/Andoid Projects/FirebasePushNotificationLib/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b2169717647c1d4d609704e6c8a86767bcd55f97/classes.dex" />
+    </item>
+
+</items>
