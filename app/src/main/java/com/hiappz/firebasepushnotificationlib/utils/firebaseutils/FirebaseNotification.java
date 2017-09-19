@@ -13,11 +13,10 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.NotificationCompat;
 
 import com.google.firebase.messaging.RemoteMessage;
-import com.hiappz.firebasepushnotificationlib.ActivityPushNotificationMain;
 import com.hiappz.firebasepushnotificationlib.R;
-import com.hiappz.firebasepushnotificationlib.utils.UtilityConstant;
 import com.hiappz.firebasepushnotificationlib.helpers.ExceptionHelper;
 import com.hiappz.firebasepushnotificationlib.helpers.LogHelper;
+import com.hiappz.firebasepushnotificationlib.utils.UtilityConstant;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -75,11 +74,12 @@ public class FirebaseNotification implements NotificationFactory{
             ExceptionHelper.handleException(TAG, e);
         }
 
-        sendNotification(context, ActivityPushNotificationMain.class);
+//        sendNotification(context, ActivityPushNotificationMain.class);
 
     }
 
-    private NotificationCompat.Builder setUpNotification(Context context) {
+    @Override
+    public NotificationCompat.Builder setUpNotification(Context context) {
         Bitmap remote_picture = null;
         Bitmap largeIconBitmap = null;
         Uri defaultSoundUri = null;
@@ -125,8 +125,7 @@ public class FirebaseNotification implements NotificationFactory{
     }
 
     @Override
-    public void sendNotification(Context context, Class activityClass) {
-        NotificationCompat.Builder notificationCompatBuilder = null;
+    public void sendNotification(Context context, NotificationCompat.Builder notificationCompatBuilder, Class activityClass) {
 
         notificationCompatBuilder = setUpNotification(context);
         isComingPushNotification = true;
